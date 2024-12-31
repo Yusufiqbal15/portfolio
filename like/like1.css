@@ -1,0 +1,65 @@
+
+  
+  .like-container {
+    text-align: center;
+  }
+  
+  .like-button {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color:rgb(243, 168, 5);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .like-button:hover {
+    background-color:rgb(243, 168, 5);
+  }
+  
+  .like-icon {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .like-count {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .like-button:focus {
+    outline: none;
+  }
+  
+  .liked {
+    background-color: #28a745; /* Green color for liked state */
+  }
+  
+  .liked .like-icon {
+    color: #fff; /* Change icon color to white when liked */
+  }
+  
+  .congratulation-message {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #28a745;
+    font-weight: bold;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
